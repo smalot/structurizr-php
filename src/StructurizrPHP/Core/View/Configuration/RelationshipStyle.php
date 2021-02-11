@@ -192,7 +192,7 @@ final class RelationshipStyle
             $data['width'] = $this->width;
         }
 
-        if ($this->dashed) {
+        if (is_bool($this->dashed)) {
             $data['dashed'] = $this->dashed;
         }
 
